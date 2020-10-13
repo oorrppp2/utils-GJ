@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/CenterNet-master/src/lib/models/networks/DCNv2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CenterNet-master/src/tools/lib/models/networks/DCNv2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Complex-YOLO" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Complex-YOLO2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DenseFusion" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PoseCNN" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PoseCNN_py2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/complex_yolo_3d" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/votenet" vcs="Git" />
+  </component>
+</project>
