@@ -6,13 +6,24 @@ import numpy as np
 import cv2
 import math
 import sys
-mat_file = io.loadmat('/media/user/ssd_1TB/YCB_dataset/data_syn3/030000-meta.mat')
-# mat_file = io.loadmat('/media/user/433c5472-5bea-42d9-86c4-e0794e47477f/YCB_dataset/data/0000/000001-meta.mat')
-# mat_file = io.loadmat('/home/user/PycharmProjects/DenseFusion/experiments/eval_result/ycb/Densefusion_iterative_result/0000.mat')
-# mat_file = io.loadmat('/home/user/PycharmProjects/DenseFusion/YCB_Video_toolbox/results_PoseCNN_RSS2018/000000.mat')
+# mat_file = io.loadmat('/media/user/ssd_1TB/YCB_dataset/data_syn3/030000-meta.mat')
+result_mat_file = io.loadmat('/home/user/python_projects/DenseFusion/experiments/eval_result/ycb/Densefusion_iterative_result/0012.mat')
+# mat_file = io.loadmat('/home/user/python_projects/DenseFusion/YCB_Video_toolbox/results_PoseCNN_RSS2018/000000.mat')
 while 1:
     try:
-        data = mat_file.popitem()
+        data = result_mat_file.popitem()
+    except:
+        break
+    # print(str(data['vertmap']))
+    # print(type(data))
+    print("--------------------")
+    print(str(data))
+
+print('\n ================================================ \n')
+gt_mat_file = io.loadmat('/media/user/ssd_1TB/YCB_dataset/data/0048/000013-meta.mat')
+while 1:
+    try:
+        data = gt_mat_file.popitem()
     except:
         break
     # print(str(data['vertmap']))
