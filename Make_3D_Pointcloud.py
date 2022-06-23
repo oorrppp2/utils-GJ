@@ -24,8 +24,8 @@ ax = Axes3D(fig)
 # img = cv2.imread('/home/user/sample_image/image171_color.png')
 # depth = np.array(Image.open('/home/user/sample_image/image171_depth.png'))
 
-img = cv2.imread('/home/user/bag_images2/color_image0.png')
-depth = np.array(Image.open('/home/user/bag_images2/depth_image0.png'))
+img = cv2.imread('/home/user/6D_pose_estimation_kist_dataset/color_0.png')
+depth = np.array(Image.open('/home/user/6D_pose_estimation_kist_dataset/depth_0.png'))
 
 rgb = np.reshape(img, (len(img) * len(img[0]), 3))
 rgb = rgb.astype("float32")

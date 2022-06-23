@@ -11,7 +11,8 @@ fig = pyplot.figure()
 ax = Axes3D(fig)
 
 # input_file = open('/media/user/ssd_1TB/YCB_dataset/points/002_master_chef_can/points.xyz')
-input_file = open('/media/user/ssd_1TB/YCB_dataset/points/025_mug/points.xyz')
+# input_file = open('/media/user/ssd_1TB/YCB_dataset/points/025_mug/points.xyz')
+input_file = open('/media/user/ssd_1TB/YCB_dataset/models/025_mug/textured.obj')
 cld = []
 x = []
 y = []
@@ -22,10 +23,14 @@ while 1:
         break
     input_line = input_line[:-1]
     input_line = input_line.split(' ')
-    cld.append([float(input_line[0]), float(input_line[1]), float(input_line[2])])
-    x.append(float(input_line[0]))
-    y.append(float(input_line[1]))
-    z.append(float(input_line[2]))
+    # print(input_line)
+    if input_line[0] == 'v':
+        cld.append([float(input_line[1]), float(input_line[2]), float(input_line[3])])
+        x.append(float(input_line[1]))
+        y.append(float(input_line[2]))
+        z.append(float(input_line[3]))
+    if input_line[0] == 'vt' or input_line[0] == 'vn':
+        break
 input_file.close()
 
 x_max = np.max(x)

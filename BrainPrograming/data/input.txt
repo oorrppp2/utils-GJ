@@ -1,0 +1,1 @@
+This work proposes a process for efficiently searching over combinations of individual object 6D pose hypotheses in cluttered scenes, especially in cases involving occlusions and objects resting on each other.

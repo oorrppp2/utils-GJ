@@ -1,8 +1,7 @@
 import cv2
 
 # img = cv2.imread('data/재학증명서.jpg', cv2.IMREAD_GRAYSCALE)
-img_gray = cv2.imread('ychan/1.jpg', cv2.IMREAD_GRAYSCALE)
-# img = cv2.imread('data/예금구좌신고서.jpg', -1)
+img_gray = cv2.imread('thesis_plan.jpg', cv2.IMREAD_GRAYSCALE)
 img = img_gray
 row, col = img.shape
 

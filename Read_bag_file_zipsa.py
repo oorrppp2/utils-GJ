@@ -11,8 +11,8 @@ def main():
     #     os.mkdir(args.directory)
     try:
         for s in range(15,16):
-            read_path ="/home/user/python_projects/utils-GJ/realsense_bag/kist_scene/"+str(s)+".bag"
-            save_path = "/home/user/python_projects/DenseFusion_yolact_base/living_lab_video/"+str(s)+"/"
+            read_path ="/media/user/ssd_1TB/realsense_bag/kist_scene/"+str(s)+".bag"
+            save_path = "/media/user/ssd_1TB/realsense_bag/kist_scene/"+str(s)+"/"
             begin = time.time()
 
             index = 0
@@ -60,8 +60,8 @@ def main():
                 # convert color image to BGR for OpenCV
                 color_frame = frames.get_color_frame()
                 color_image = np.asanyarray(color_frame.get_data())
-                # r, g, b = cv2.split(color_image)
-                # color_image = cv2.merge((b, g, r))
+                r, g, b = cv2.split(color_image)
+                color_image = cv2.merge((b, g, r))
 
                 # cv2.imshow("color", color_image)
                 # cv2.imshow("aligned_depth_image", aligned_depth_image)
