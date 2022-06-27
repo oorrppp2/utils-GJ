@@ -1,5 +1,6 @@
 import time
-import numpy as np
+# import numpy as np
+
 
 # m = 0
 # t = time.time()
@@ -47,3 +48,28 @@ import numpy as np
 # print(l.qsize())
 # print(time.time() - t)
 
+
+# size = 3000
+# l_2D = [[i for i in range(size)] for j in range(size)]
+# l_1D = [i for i in range(size*size)]
+
+# t = time.time()
+# for i in range(size):
+#     for j in range(size):
+#         l_2D[i][j] += 1
+
+# print(time.time() - t)
+# t = time.time()
+
+# for i in range(size*size):
+#     l_1D[i] += 1
+# print(time.time() - t)
+
+# s = set()
+# l = [[1, 3, 5, 5, 7, 7, 9] for i in range(10)]
+# for i in range(10):
+#     ls = [set(l[i])]
+#     print(ls)
+#     s.add(ls)
+# print(l)
+# print(s)
