@@ -6,17 +6,12 @@ T = int(stdin.readline())
 for i in range(T):
     N, M = list(map(int, stdin.readline().split()))
     queue = list(map(int, stdin.readline().split()))
-    target = [False] * N
-    target[M] = True
-    order = 1
-    while len(queue) != 0:
-        if queue[0] < max(queue):
-            queue.append(queue.pop(0))
-            target.append(target.pop(0))
+
+    for j in range(len(queue)):
+        if queue[j] < max(queue):
+            queue.append(queue[j])
         else:
-            if target[0]:
-                print(order)
+            if M == j:
+                print(j+1)
                 break
-            queue.pop(0)
-            target.pop(0)
-            order += 1
+            # queue.pop(0)
