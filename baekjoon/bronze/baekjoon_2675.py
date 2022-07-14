@@ -9,4 +9,3 @@ for i in range(T):
         for _ in range(R):
             print(s, end='')
     print()
-    # print(R, S)

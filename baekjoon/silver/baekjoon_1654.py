@@ -30,7 +30,7 @@ while True:
         small = d_stick
     else:
         large = d_stick
-    print("d_stick: ", d_stick, "  ,  small:, ", small, "  ,  large: ", large)
+    # print("d_stick: ", d_stick, "  ,  small:, ", small, "  ,  large: ", large)
 
     if small >= large:
         break

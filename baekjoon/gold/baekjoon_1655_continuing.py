@@ -28,10 +28,6 @@ for i in range(N):
         min_val = l.get()
         s.put((-min_val, min_val))
         l.put(max_val)
-        # s_max = s.get()[1]
-        # l_min = l.get()
-        # s.put((-s_max, s_max))
-        # l.put(l_min)
         s_max = s.queue[0][1]
         l_min = l.queue[0]
 
